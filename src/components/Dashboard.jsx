@@ -17,7 +17,7 @@ const Dashboard = () => {
       genre: 'Science Fiction',
       releaseYear: 2010,
       synopsis: 'A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.',
-      posterUrl: 'https://image.tmdb.org/t/p/original/xymM5aW6MDcH5AR9I3CamSegJd6.jpgg',
+      posterUrl: 'https://m.media-amazon.com/images/I/71thFiIUSpL._AC_UF894,1000_QL80_.jpg',
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ const Dashboard = () => {
       genre: 'Action',
       releaseYear: 1999,
       synopsis: 'A computer hacker learns about the true nature of his reality and his role in the war against its controllers.',
-      posterUrl: 'https://image.tmdb.org/t/p/original/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg',
+      posterUrl: 'https://m.media-amazon.com/images/I/51oQqzZoZpL._AC_UF894,1000_QL80_.jpg',
     },
     // Add more movie objects as needed
   ]);
@@ -35,6 +35,9 @@ const Dashboard = () => {
     <div className="dashboard">
       <header className="dashboard-header">
         <h1>Movie Collection</h1>
+        <button className="add-movie-button" onClick={() => navigate("/add-movie")}>
+         Add Movie
+        </button>
       </header>
       <div className="movie-list">
         {movies.map((movie) => (
